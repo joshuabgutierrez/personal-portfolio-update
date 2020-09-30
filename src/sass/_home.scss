@@ -1,0 +1,59 @@
+@use 'variables';
+
+main {
+	height: 100vh;
+	background: linear-gradient(rgba(20, 20, 20, .7), rgba(20, 20, 20, .7)), url('../../assets/hero-background.jpg');
+}
+
+main header nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	div > a {
+		color: variables.$light-color;
+		text-transform: uppercase;
+		font-size: 1.25rem;
+		margin: 0 1.5em;
+	}
+
+	.logo {
+		color: variables.$primary-color;
+		font-family: variables.$logo-font;
+		font-size: 4rem;
+		font-weight: 800;
+		margin: 0 1em;
+	}
+}
+
+section.showcase {
+	transform: translateY(20%);
+	max-width: 600px;
+	width: 100%;
+	height: 400px;
+	margin: auto;
+	color: variables.$light-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+
+	h3 {
+		text-transform: uppercase;
+		font-size: 4rem;
+		margin-bottom: 0.5em;
+	}
+
+	p {
+		font-size: 1.2rem;
+		margin: 1em auto;
+	}
+
+	button.cta {
+		color: variables.$light-color;
+		background-color: variables.$primary-color;
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		margin: 1em auto;
+	}
+}

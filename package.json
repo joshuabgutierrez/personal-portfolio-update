@@ -1,0 +1,12 @@
+{
+	"name": "personal-portfolio-redesign",
+	"version": "1.0.0",
+	"description": "Redesign for my personal portfolio",
+	"private": "true",
+	"main": "app.js",
+	"scripts": {
+		"watch-sass": "sass --watch src/sass:public/stylesheets"
+	},
+	"author": "Joshua Gutierrez",
+	"license": "MIT"
+}
