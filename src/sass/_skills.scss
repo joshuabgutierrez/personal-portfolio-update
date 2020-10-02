@@ -1,0 +1,47 @@
+@use 'variables';
+
+section.skills-section {
+	color: variables.$light-color;
+
+	div.skills-section-content {
+		height: inherit;
+		margin: 3em 0;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr 70% 1fr;
+		grid-template-areas: ". header ." ". main .";
+
+		header {
+			grid-area: header;
+			align-self: center;
+			font-size: 2rem;
+			font-weight: 900;
+		}
+
+		main.skills-containers {
+			grid-area: main;
+			display: grid;
+			gap: 40px 100px;
+			grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
+			div.skills {
+				display: flex;
+				align-items: center;
+
+				img {
+					margin-right: 2em;
+				}
+
+				h3 {
+					margin-bottom: 0.25em;
+				}
+
+				span.skill-label {
+					background: variables.$secondary-color;
+					padding: 0.5px 5px;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+}

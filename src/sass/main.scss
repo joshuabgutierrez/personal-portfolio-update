@@ -1,6 +1,8 @@
 @use 'variables';
 @use 'home';
 @use 'about';
+@use 'skills';
+@use 'work';
 
 * {
 	padding: 0;
@@ -38,6 +40,34 @@ span.line {
 	display: block;
 	width: 20vw;
 	padding: 2px;
-	margin: 0 auto;
+	margin: 2em auto;
 	background-color: variables.$primary-color;
+}
+
+button.see-website,
+button.see-repo {
+	background-color: transparent;
+	color: variables.$light-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 150px;
+	height: 40px;
+	margin: 0.5em 0;
+
+	img {
+		max-width: 100%;
+	}
+
+	a {
+		color: variables.$light-color;
+	}
+}
+
+button.see-website {
+	border: 2px solid variables.$primary-color;
+}
+
+button.see-repo {
+	border: 2px solid variables.$secondary-color;
 }

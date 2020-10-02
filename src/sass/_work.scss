@@ -1,0 +1,91 @@
+@use 'variables';
+
+section.work-section {
+	height: 80vh;
+	margin-top: 5em;
+
+	header {
+		text-align: center;
+
+		h1 {
+			color: variables.$primary-color;
+			font-size: 2rem;
+		}
+
+		h3 {
+			color: variables.$light-color;
+		}
+	}
+
+	main.projects {
+		margin-top: 2em;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 1em;
+
+		article {
+			width: 100%;
+			max-width: 600px;
+			color: variables.$light-color;
+			position: relative;
+			border-radius: 10px 10px 0 0;
+
+			img {
+				border-radius: 10px 10px 0 0;
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+
+			div.project-title {
+				height: 90px;
+				display: flex;
+				flex-direction: row;
+				justify-content: start;
+				align-items: center;
+
+				span.line {
+					max-width: 100px;
+					margin: 0;
+					margin-right: 2em;
+				}
+			}
+
+			div.coffee {
+				background-color: #e99702;
+			}
+
+			div.recipe {
+				background-color: #a94721;
+			}
+
+			div.overlay {
+				border-radius: 10px 10px 0 0;
+				opacity: 0.35;
+				position: absolute;
+				width: 100%;
+				top: 0;
+				height: calc(100% - 90px);
+				transition: all 0.3s ease-in-out;
+			}
+
+			figcaption {
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+				font-size: 1.25rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: cyan;
+			}
+		}
+
+		figcaption:hover ~ div.overlay {
+			background-color: #000000;
+		}
+	}
+}
