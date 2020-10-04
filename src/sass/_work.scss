@@ -25,11 +25,12 @@ section.work-section {
 		padding: 1em;
 
 		article {
-			width: 100%;
 			max-width: 600px;
+			width: 100%;
+			height: auto;
+			border-radius: 10px 10px 0 0;
 			color: variables.$light-color;
 			position: relative;
-			border-radius: 10px 10px 0 0;
 
 			img {
 				border-radius: 10px 10px 0 0;
@@ -52,22 +53,16 @@ section.work-section {
 				}
 			}
 
-			div.coffee {
-				background-color: #e99702;
-			}
-
-			div.recipe {
-				background-color: #a94721;
-			}
-
 			div.overlay {
+				background-color: #000000;
 				border-radius: 10px 10px 0 0;
-				opacity: 0.35;
 				position: absolute;
-				width: 100%;
 				top: 0;
+				left: 0;
+				width: 100%;
 				height: calc(100% - 90px);
-				transition: all 0.3s ease-in-out;
+				opacity: 0;
+				transition: 0.5s ease-in-out;
 			}
 
 			figcaption {
@@ -80,12 +75,18 @@ section.work-section {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				background-color: cyan;
+				opacity: 0;
+				transition: 0.5s ease-in-out;
 			}
-		}
 
-		figcaption:hover ~ div.overlay {
-			background-color: #000000;
+			&:hover figcaption {
+				opacity: 1;
+				z-index: 1;
+			}
+
+			&:hover div.overlay {
+				opacity: 1;
+			}
 		}
 	}
 }

@@ -178,11 +178,12 @@ section.work-section main.projects {
   padding: 1em;
 }
 section.work-section main.projects article {
-  width: 100%;
   max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
   color: #ffffff;
   position: relative;
-  border-radius: 10px 10px 0 0;
 }
 section.work-section main.projects article img {
   border-radius: 10px 10px 0 0;
@@ -202,20 +203,16 @@ section.work-section main.projects article div.project-title span.line {
   margin: 0;
   margin-right: 2em;
 }
-section.work-section main.projects article div.coffee {
-  background-color: #e99702;
-}
-section.work-section main.projects article div.recipe {
-  background-color: #a94721;
-}
 section.work-section main.projects article div.overlay {
+  background-color: #000000;
   border-radius: 10px 10px 0 0;
-  opacity: 0.35;
   position: absolute;
-  width: 100%;
   top: 0;
+  left: 0;
+  width: 100%;
   height: calc(100% - 90px);
-  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
 }
 section.work-section main.projects article figcaption {
   position: absolute;
@@ -227,10 +224,15 @@ section.work-section main.projects article figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: cyan;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
 }
-section.work-section main.projects figcaption:hover ~ div.overlay {
-  background-color: #000000;
+section.work-section main.projects article:hover figcaption {
+  opacity: 1;
+  z-index: 1;
+}
+section.work-section main.projects article:hover div.overlay {
+  opacity: 1;
 }
 
 * {
@@ -295,10 +297,18 @@ button.see-repo a {
 
 button.see-website {
   border: 2px solid #fb3569;
+  transition: 0.3s ease-in-out;
+}
+button.see-website:hover {
+  background-color: #fb3569;
 }
 
 button.see-repo {
   border: 2px solid #6e64e7;
+  transition: 0.3s ease-in-out;
+}
+button.see-repo:hover {
+  background-color: #6e64e7;
 }
 
 /*# sourceMappingURL=main.css.map */
