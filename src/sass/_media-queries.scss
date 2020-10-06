@@ -46,3 +46,94 @@
 		}
 	}
 }
+
+@media screen and (max-width: 620px) {
+	section.about-section {
+		padding: 0;
+
+		article p {
+			font-size: 1rem;
+		}
+	}
+
+	section.showcase {
+		max-width: 400px;
+		width: 100%;
+		h3 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1rem;
+		}
+	}
+
+	section.work-section {
+		padding: 0 1em;
+	}
+
+	section.contact-section {
+		padding: 0;
+
+		header {
+			text-align: center;
+			height: 20vh;
+			padding: 1em 0;
+		}
+
+		main.form-container {
+			transform: translateY(-50px);
+			max-width: 400px;
+
+			header {
+				justify-content: center;
+			}
+
+			section.form-fields {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	section.skills-section div.skills-section-content {
+		header,
+		h3 {
+			text-align: center;
+		}
+
+		main.skills-containers {
+			grid-template-columns: 1fr;
+
+			div.skills {
+				flex-direction: column;
+
+				img {
+					margin-right: 0;
+				}
+			}
+		}
+
+		div.technologies {
+			text-align: center;
+		}
+	}
+
+	section.work-section main.projects article {
+		figcaption {
+			top: 30%;
+			p {
+				font-size: 1rem;
+			}
+
+			button {
+				max-width: 120px;
+				width: 100%;
+				font-size: 0.8rem;
+				padding: 0;
+				justify-content: space-around;
+			}
+		}
+	}
+}

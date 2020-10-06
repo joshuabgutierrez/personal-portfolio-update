@@ -11,7 +11,7 @@ section.work-section {
 			font-size: 2rem;
 		}
 
-		h3 {
+		h2 {
 			color: variables.$light-color;
 		}
 	}
@@ -66,6 +66,7 @@ section.work-section {
 			}
 
 			figcaption {
+				width: 100%;
 				position: absolute;
 				top: 40%;
 				left: 50%;

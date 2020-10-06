@@ -9,24 +9,25 @@
     <title>Joshua Gutierrez | Front-End Developer</title>
 </head>
 <body>
-    <main class="showcase-section">
+    <!-- SHOWCASE -->
+    <main class="showcase-section" id="showcase">
         <header>
             <nav>
                 <img src="assets/menu-icon.png" alt="hamburger menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="nav-left">
-                    <a href="#">Home</a>
-                    <a href="#">Work</a>
+                    <a href="#home">Home</a>
+                    <a href="#work">Work</a>
                 </div>
                 <span class="logo">JG</span>
                 <div class="nav-right">
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </nav>
         </header>
@@ -37,7 +38,8 @@
             <button class="cta">See Work</button>
         </section>
     </main>
-    <section class="about-section">
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
         <div class="label">
             <div class="label-up">
                 <span class="letter">A</span>
@@ -65,23 +67,24 @@
             <section>
                 <div class="social social-github">
                     <a href="https://github.com/joshuabgutierrez">
-                        <img src="assets/github-logo.png" alt="" srcset="">
+                        <img src="assets/github-logo.png" alt="github logo">
                     </a>
                 </div>
                 <div class="social social-linkedin">
                     <a href="https://www.linkedin.com/in/joshua-b-gutierrez-3a6b13199/">
-                        <img src="assets/linkedin-logo.png" alt="" srcset="">
+                        <img src="assets/linkedin-logo.png" alt="linkedin logo">
                     </a>
                 </div>
             </section>
         </footer>
     </section>
+    <!-- SKILLS -->
     <section class="skills-section">
         <div class="skills-section-content">
             <header>My Skills</header>
             <main class="skills-containers">
                 <div class="skills">
-                    <img src="assets/web-dev-icon.png" alt="">
+                    <img src="assets/web-dev-icon.png" alt="screen icon with html tags in the center">
                     <div>
                         <h3>Web Development</h3>
                         <div class="technologies">
@@ -93,7 +96,7 @@
                 </div>
 
                 <div class="skills">
-                    <img src="assets/front-end-dev-icon.png" alt="">
+                    <img src="assets/front-end-dev-icon.png" alt="screen icon with an atom in the center">
                     <div>
                         <h3>Front-End Development</h3>
                         <div class="technologies">
@@ -105,7 +108,7 @@
                 </div>
 
                 <div class="skills">
-                    <img src="assets/front-end-tools-icon.png" alt="">
+                    <img src="assets/front-end-tools-icon.png" alt="browser icon with a greater than sign followed by an underscore">
                     <div>
                         <h3>Front-End Tools</h3>
                         <div class="technologies">
@@ -117,7 +120,7 @@
                 </div>
 
                 <div class="skills">
-                    <img src="assets/other-icon.png" alt="">
+                    <img src="assets/other-icon.png" alt="two gears with arrows point upwards">
                     <div>
                         <h3>Other Technologies</h3>
                         <div class="technologies">
@@ -130,18 +133,19 @@
             </main>
         </div>
     </section>
-    <section class="work-section">
+    <!-- WORK -->
+    <section class="work-section" id="work">
         <header>
             <h1>My recent work</h1>
-            <h3>Here are some projects I have worked on</h3>
+            <h2>Here are some projects I have worked on</h2>
         </header>
         <main class="projects">
             <article>
-                <img src="assets/coffee.jpg" alt="">
+                <img src="assets/coffee.jpg" alt="Savannah Coffee Shop">
                 <figcaption>
                     <p>Landing page for a fictitious coffee shop</p>
-                    <button class="see-website"><span><a href="#">Visit Website</a></span><img src="assets/website-icon.png" alt=""></button>
-                    <button class="see-repo"><span><a href="#">Check Code</a></span><img src="assets/repo-icon.png" alt=""></button>
+                    <button class="see-website"><span><a href="#">Visit Website</a></span><img src="assets/website-icon.png" alt="external link icon"></button>
+                    <button class="see-repo"><span><a href="#">Check Code</a></span><img src="assets/repo-icon.png" alt="github branch icon"></button>
                 </figcaption>
                 <div class="overlay"></div>
                 <div class="project-title">
@@ -150,11 +154,11 @@
                 </div>
             </article>
             <article>
-                <img src="assets/recipe-finder.jpg" alt="">
+                <img src="assets/recipe-finder.jpg" alt="Mom's recipes, find a recipe for everything">
                 <figcaption>
                     <p>Don't know what to cook today? Start here!</p>
-                    <button class="see-website"><span><a href="#">Visit Website</a></span><img src="assets/website-icon.png" alt=""></button>
-                    <button class="see-repo"><span><a href="#">Check Code</a></span><img src="assets/repo-icon.png" alt=""></button>
+                    <button class="see-website"><span><a href="#">Visit Website</a></span><img src="assets/website-icon.png" alt="external link icon"></button>
+                    <button class="see-repo"><span><a href="#">Check Code</a></span><img src="assets/repo-icon.png" alt="github branch icon"></button>
                 </figcaption>
                 <div class="overlay"></div>
                 <div class="project-title">
@@ -164,7 +168,8 @@
             </article>
         </main>
     </section>
-    <section class="contact-section">
+    <!-- CONTACT ME -->
+    <section class="contact-section" id="contact">
         <header>Let's Talk</header>
         <main class="form-container">
             <header>
@@ -175,15 +180,15 @@
                 <form action="">
                     <div class="form-column">
                         <label for="name">Your name</label>
-                        <input type="text" name="name" id="">
+                        <input type="text" name="name" id="name">
                     </div>
                     <div class="form-column">
                         <label for="email">Your email</label>
-                        <input type="email" name="email" id="">
+                        <input type="email" name="email" id="email">
                     </div>
                     <div class="form-column">
                         <label for="message">Your message</label>
-                        <textarea name="message" id=""></textarea>
+                        <textarea name="message" id="message"></textarea>
                     </div>
                     <div class="form-column">
                         <button class="submit-btn">Send Now<img src="assets/forward-arrow.png" alt="forward arrow"></button>
@@ -210,6 +215,7 @@
             </section>
         </main>
     </section>
+    <!-- FOOTER -->
     <footer class="main-footer">Created by Joshua Gutierrez &copy;2020</footer>
 
     <script src="src/scripts/main.js"></script>

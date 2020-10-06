@@ -3,6 +3,9 @@
 section.about-section {
 	color: variables.$light-color;
 	padding: 5em 0;
+	max-width: 80vw;
+	width: 100%;
+	margin: 0 auto;
 
 	header {
 		margin-top: 5em;
