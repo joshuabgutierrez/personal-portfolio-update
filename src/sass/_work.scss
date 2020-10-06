@@ -1,8 +1,7 @@
 @use 'variables';
 
 section.work-section {
-	height: 80vh;
-	margin-top: 5em;
+	padding: 5em 0;
 
 	header {
 		text-align: center;
@@ -27,6 +26,7 @@ section.work-section {
 		article {
 			max-width: 600px;
 			width: 100%;
+			margin: 1.5em 0;
 			height: auto;
 			border-radius: 10px 10px 0 0;
 			color: variables.$light-color;

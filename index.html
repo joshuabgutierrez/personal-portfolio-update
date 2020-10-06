@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Self-taught front-end developer who has worked with JavaScript, React, and Gatsby">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/stylesheets/main.css">
-    <title>Joshua Gutierrez | Web Developer</title>
+    <title>Joshua Gutierrez | Front-End Developer</title>
 </head>
 <body>
     <main class="showcase-section">
         <header>
             <nav>
+                <img src="assets/menu-icon.png" alt="hamburger menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
                 <div class="nav-left">
                     <a href="#">Home</a>
                     <a href="#">Work</a>
@@ -156,5 +164,54 @@
             </article>
         </main>
     </section>
+    <section class="contact-section">
+        <header>Let's Talk</header>
+        <main class="form-container">
+            <header>
+                <img src="assets/contact-me-icon.png" alt="contact me icon">
+                <span>Get in touch</span>
+            </header>
+            <section class="form-fields">
+                <form action="">
+                    <div class="form-column">
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" id="">
+                    </div>
+                    <div class="form-column">
+                        <label for="email">Your email</label>
+                        <input type="email" name="email" id="">
+                    </div>
+                    <div class="form-column">
+                        <label for="message">Your message</label>
+                        <textarea name="message" id=""></textarea>
+                    </div>
+                    <div class="form-column">
+                        <button class="submit-btn">Send Now<img src="assets/forward-arrow.png" alt="forward arrow"></button>
+                    </div>
+                    
+                </form>
+                <span class="line"></span>
+                <div class="contact-me-links">
+                    <div class="contact-me-content">
+                        <div class="link">
+                            <img src="assets/email-icon.png" alt="icon of a letter">
+                            <a href="#">joshgm15@gmail.com</a>
+                        </div>
+                        <div class="link">
+                            <img src="assets/linkedin-logo.png" alt="icon of a letter">
+                            <a href="#">www.linkedin.com</a>
+                        </div>
+                        <div class="link">
+                            <img src="assets/github-logo.png" alt="icon of a letter">
+                            <a href="#">www.github.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+    <footer class="main-footer">Created by Joshua Gutierrez &copy;2020</footer>
+
+    <script src="src/scripts/main.js"></script>
 </body>
 </html>

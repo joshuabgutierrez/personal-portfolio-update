@@ -1,0 +1,48 @@
+@use 'variables';
+
+@media screen and (max-width: 836px) {
+	// Responsive nav for tablet and mobile
+	main.showcase-section header {
+		background-color: variables.$dark-color;
+		width: 100%;
+		z-index: 1;
+		transition: 0.5s ease;
+
+		.nav-left,
+		.logo,
+		.nav-right {
+			display: none;
+		}
+
+		nav {
+			padding: 1em 0;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			img {
+				cursor: pointer;
+				max-width: 2.5em;
+				width: 100%;
+				margin-left: 2em;
+				display: block;
+			}
+
+			ul {
+				margin-left: 2em;
+				max-width: 100%;
+
+				li {
+					margin: 2em 0;
+				}
+			}
+
+			a {
+				color: variables.$light-color;
+				text-transform: uppercase;
+				font-weight: 500;
+				font-size: 3rem;
+			}
+		}
+	}
+}
