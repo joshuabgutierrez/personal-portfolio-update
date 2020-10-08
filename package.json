@@ -5,8 +5,19 @@
 	"private": "true",
 	"main": "app.js",
 	"scripts": {
-		"watch-sass": "sass --watch src/sass:public/stylesheets"
+		"watch-sass": "sass --watch src/sass:public/stylesheets",
+		"autoprefixer": "postcss ./public/stylesheets/main.css --use autoprefixer -d build",
+		"transpile-js": "babel src/scripts/main.js -d build"
 	},
 	"author": "Joshua Gutierrez",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/cli": "^7.11.6",
+		"@babel/core": "^7.11.6",
+		"@babel/preset-env": "^7.11.5",
+		"autoprefixer": "^10.0.1",
+		"postcss": "^8.1.1",
+		"postcss-cli": "^8.0.0"
+	},
+	"browserslist": [ "last 2 versions" ]
 }
