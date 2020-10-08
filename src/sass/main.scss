@@ -17,7 +17,6 @@ body {
 	font-family: variables.$main-font;
 	position: relative;
 	line-height: 1.5;
-	// overflow: hidden;
 }
 
 a {
@@ -99,4 +98,18 @@ footer.main-footer {
 	font-size: 1rem;
 	font-weight: 700;
 	text-align: center;
+}
+
+.revealer {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 10px;
+	width: 10px;
+	background-color: variables.$primary-color;
+	border-radius: 5000px;
+	transform: scale(0);
 }
