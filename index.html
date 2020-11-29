@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Self-taught front-end developer who has worked with JavaScript, React, and Gatsby">
+    <link rel="icon" href="assets/joshua-gutierrez.png">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/stylesheets/main.css">
     <title>Joshua Gutierrez | Front-End Developer</title>
@@ -11,31 +12,32 @@
 <body>
     <!-- SHOWCASE -->
     <main class="showcase-section" id="showcase">
+        <div class="revealer"></div>
         <header>
             <nav>
                 <img src="assets/menu-icon.png" alt="hamburger menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" data-target="home" class="target-link">Home</a></li>
+                    <li><a href="#" data-target="work" class="target-link">Work</a></li>
+                    <li><a href="#" data-target="about" class="target-link">About</a></li>
+                    <li><a href="#" data-target="contact" class="target-link">Contact</a></li>
                 </ul>
                 <div class="nav-left">
-                    <a href="#home">Home</a>
-                    <a href="#work">Work</a>
+                    <a href="#" data-target="home" class="target-link">Home</a>
+                    <a href="#" data-target="work" class="target-link">Work</a>
                 </div>
                 <span class="logo">JG</span>
                 <div class="nav-right">
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#" data-target="about" class="target-link">About</a>
+                    <a href="#" data-target="contact" class="target-link">Contact</a>
                 </div>
             </nav>
         </header>
         <section class="showcase">
             <h3>I build products for the web</h3>
             <span class="line"></span>
-            <p>I build websites that are accessible, easy to use, and follow good UX practices</p>
-            <button class="cta">See Work</button>
+            <p>Learning everyday to enhance web applications</p>
+            <button class="cta target-link" data-target="work">See Work</button>
         </section>
     </main>
     <!-- ABOUT -->
@@ -144,8 +146,8 @@
                 <img src="assets/coffee.jpg" alt="Savannah Coffee Shop">
                 <figcaption>
                     <p>Landing page for a fictitious coffee shop</p>
-                    <button class="see-website"><span><a href="#">Visit Website</a></span><img src="assets/website-icon.png" alt="external link icon"></button>
-                    <button class="see-repo"><span><a href="#">Check Code</a></span><img src="assets/repo-icon.png" alt="github branch icon"></button>
+                    <button class="see-website"><span><a href="https://savannah-coffee-shop.netlify.app/">Visit Website</a></span><img src="assets/website-icon.png" alt="external link icon"></button>
+                    <button class="see-repo"><span><a href="https://github.com/joshuabgutierrez/coffee-shop-landing-page">Check Code</a></span><img src="assets/repo-icon.png" alt="github branch icon"></button>
                 </figcaption>
                 <div class="overlay"></div>
                 <div class="project-title">
@@ -157,8 +159,8 @@
                 <img src="assets/recipe-finder.jpg" alt="Mom's recipes, find a recipe for everything">
                 <figcaption>
                     <p>Don't know what to cook today? Start here!</p>
-                    <button class="see-website"><span><a href="#">Visit Website</a></span><img src="assets/website-icon.png" alt="external link icon"></button>
-                    <button class="see-repo"><span><a href="#">Check Code</a></span><img src="assets/repo-icon.png" alt="github branch icon"></button>
+                    <button class="see-website"><span><a href="https://recipe-finder-site.herokuapp.com/">Visit Website</a></span><img src="assets/website-icon.png" alt="external link icon"></button>
+                    <button class="see-repo"><span><a href="https://github.com/joshuabgutierrez/recipe-app">Check Code</a></span><img src="assets/repo-icon.png" alt="github branch icon"></button>
                 </figcaption>
                 <div class="overlay"></div>
                 <div class="project-title">
@@ -177,7 +179,7 @@
                 <span>Get in touch</span>
             </header>
             <section class="form-fields">
-                <form action="">
+                <form method="POST" data-netlify="true">
                     <div class="form-column">
                         <label for="name">Your name</label>
                         <input type="text" name="name" id="name">
@@ -191,6 +193,9 @@
                         <textarea name="message" id="message"></textarea>
                     </div>
                     <div class="form-column">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                    <div class="form-column">
                         <button class="submit-btn">Send Now<img src="assets/forward-arrow.png" alt="forward arrow"></button>
                     </div>
                     
@@ -200,15 +205,15 @@
                     <div class="contact-me-content">
                         <div class="link">
                             <img src="assets/email-icon.png" alt="icon of a letter">
-                            <a href="#">joshgm15@gmail.com</a>
+                            <a href="mailto:joshgm15@gmail.com">Send me an email</a>
                         </div>
                         <div class="link">
                             <img src="assets/linkedin-logo.png" alt="icon of a letter">
-                            <a href="#">www.linkedin.com</a>
+                            <a href="https://www.linkedin.com/in/joshua-b-gutierrez-3a6b13199/" rel="noopener" rel="noreferrer" target="_blank">Linkedin Profile</a>
                         </div>
                         <div class="link">
                             <img src="assets/github-logo.png" alt="icon of a letter">
-                            <a href="#">www.github.com</a>
+                            <a href="https://github.com/joshuabgutierrez" rel="noopener" rel="noreferrer" target="_blank">Github Profile</a>
                         </div>
                     </div>
                 </div>
@@ -218,6 +223,8 @@
     <!-- FOOTER -->
     <footer class="main-footer">Created by Joshua Gutierrez &copy;2020</footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="src/scripts/main.js"></script>
 </body>
 </html>
