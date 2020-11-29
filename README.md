@@ -2,5 +2,5 @@
 This is the first redesign I applied to my entire portfolio site: [joshuabgutierrez.com](https://joshuabgutierrez.com)
 
 
-<img src="portfolio.jpg"
+<img src="assets/portfolio.jpg"
      alt="portfolio home page"/>
